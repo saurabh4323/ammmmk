@@ -24,6 +24,13 @@ export default function Header() {
                 <div className="hidden md:flex items-center gap-6">
                     <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest mr-2">Next Session In:</span>
                     <CountdownTimer compact={true} />
+                    <button
+                        onClick={() => window.open('https://wa.me/916364904890', '_blank')}
+                        className="text-emerald-400 text-xs font-bold hover:text-emerald-300 transition-colors flex items-center gap-1.5 ml-4"
+                    >
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        Talk to us
+                    </button>
                 </div>
 
                 <button className="hidden sm:flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors border border-white/10">

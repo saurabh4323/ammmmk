@@ -8,6 +8,7 @@ import Schedule from "@/components/landing/Schedule";
 import HostProfile from "@/components/landing/HostProfile";
 import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
+import StickyContact, { DesktopStickyContact } from "@/components/landing/StickyContact";
 
 export default function Home() {
   useEffect(() => {
@@ -32,6 +33,8 @@ export default function Home() {
       <HostProfile />
       <CTASection id="registration" />
       <Footer />
+      <StickyContact />
+      <DesktopStickyContact />
     </main>
   );
 }

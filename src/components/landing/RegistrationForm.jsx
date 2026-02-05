@@ -56,14 +56,25 @@ export default function RegistrationForm() {
                 <p className="text-slate-300 text-sm">
                     You have successfully registered for the entire series.
                     <br />
-                    Check your Email & WhatsApp for the join link.
+                    You will receive the <strong className="text-emerald-400">Zoom join links</strong> automatically via Email & WhatsApp.
                 </p>
-                <button
-                    onClick={() => window.open('https://chat.whatsapp.com/BRpMqwQtVDfE4YHbIp7Poh', '_blank')}
-                    className="w-full py-3.5 rounded-2xl bg-[#25D366] hover:bg-[#128C7E] text-white font-bold transition-all flex items-center justify-center gap-2"
-                >
-                    Join WhatsApp Announcement Group
-                </button>
+                <div className="flex flex-col gap-3 w-full">
+                    <button
+                        onClick={() => window.open('https://us06web.zoom.us/meeting/register/KGX9_cAvRi67lBeNmcRhsw', '_blank')}
+                        className="w-full py-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-indigo-500/20"
+                    >
+                        <div className="bg-white/20 p-1 rounded-lg">
+                            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M15.5 11l5-3.5v9l-5-3.5V11zM2 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8z" /></svg>
+                        </div>
+                        Join Zoom Session Live
+                    </button>
+                    <button
+                        onClick={() => window.open('https://chat.whatsapp.com/BRpMqwQtVDfE4YHbIp7Poh', '_blank')}
+                        className="w-full py-3.5 rounded-2xl bg-[#25D366] hover:bg-[#128C7E] text-white font-bold transition-all flex items-center justify-center gap-2 border border-white/10"
+                    >
+                        Join WhatsApp Group
+                    </button>
+                </div>
             </div>
         );
     }
@@ -141,6 +152,10 @@ export default function RegistrationForm() {
                 >
                     {isSubmitting ? 'Securing Spot...' : 'REGISTER FOR THE SUMMITSYNC SERIES'}
                 </button>
+
+                <p className="text-center text-[10px] text-slate-500 italic">
+                    * Zoom join links will be shared automatically on your Email & WhatsApp.
+                </p>
 
                 <p className="text-center text-[10px] text-slate-600">
                     Free access for a limited time.

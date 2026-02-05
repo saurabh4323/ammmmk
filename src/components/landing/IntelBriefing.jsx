@@ -8,17 +8,20 @@ export default function IntelBriefing() {
         {
             icon: <Zap className="w-6 h-6 text-amber-500" />,
             title: "The Intel",
-            description: "Behind-the-scenes of the Silicon Valley speaker lineup."
+            description: "Behind-the-scenes of the Silicon Valley speaker lineup.",
+            image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <TrendingUp className="w-6 h-6 text-amber-500" />,
             title: "The Proof",
-            description: "Real-time case studies of past participants’ career leaps."
+            description: "Real-time case studies of past participants’ career leaps.",
+            image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&w=800&q=80"
         },
         {
             icon: <Target className="w-6 h-6 text-amber-500" />,
             title: "The Reality",
-            description: "Why the \"Need of the Hour\" demands a new leadership playbook."
+            description: "Why the \"Need of the Hour\" demands a new leadership playbook.",
+            image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80"
         }
     ];
 
@@ -50,13 +53,20 @@ export default function IntelBriefing() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-amber-500/30 transition-all hover:bg-white/[0.04] hover:-translate-y-1 group backdrop-blur-sm shadow-2xl"
+                            className="group relative rounded-2xl bg-white/[0.02] border border-white/5 hover:border-amber-500/30 transition-all hover:bg-white/[0.04] hover:-translate-y-1 backdrop-blur-sm shadow-2xl overflow-hidden"
                         >
-                            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-amber-500/30 transition-all shadow-inner">
-                                {feature.icon}
+                            {/* Card Image Background */}
+                            <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+                                <img src={feature.image} alt="" className="w-full h-full object-cover" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">{feature.title}</h3>
-                            <p className="text-slate-400 leading-relaxed">{feature.description}</p>
+
+                            <div className="relative p-8">
+                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-white/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-amber-500/30 transition-all shadow-inner">
+                                    {feature.icon}
+                                </div>
+                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">{feature.title}</h3>
+                                <p className="text-slate-400 leading-relaxed">{feature.description}</p>
+                            </div>
                         </motion.div>
                     ))}
                 </div>

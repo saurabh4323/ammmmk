@@ -43,7 +43,8 @@ export default function Schedule() {
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-900/20 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="container mx-auto px-4 relative z-10">
-                <div className="max-w-3xl mx-auto text-center mb-20">
+                <div className="max-w-3xl mx-auto text-center mb-20 relative">
+                    <div className="absolute -inset-4 bg-indigo-500/5 blur-3xl rounded-full -z-10" />
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
                         Choose Your Session <br />
                         <span className="text-slate-500 text-2xl md:text-3xl font-light italic">(or Attend All Five)</span>
@@ -95,25 +96,35 @@ export default function Schedule() {
                             </div>
 
                             {/* Action/Status */}
-                            <div className="w-full md:w-auto flex justify-center">
+                            <div className="w-full md:w-auto flex flex-col items-center gap-4">
                                 {index === 0 ? (
                                     <div className="flex flex-col items-center gap-4">
-                                        <img
-                                            src="/a.jpeg"
-                                            alt="Session Preview"
-                                            className="w-48 rounded-lg border border-white/20 shadow-lg hover:border-amber-500/50 transition-colors"
-                                        />
-                                        <button
-                                            onClick={() => window.open('https://www.linkedin.com/events/7424113166231470080/', '_blank')}
-                                            className="px-8 py-3 rounded-xl bg-amber-500 text-black text-sm font-bold hover:bg-amber-400 transition-all shadow-[0_0_20px_-5px_rgba(245,158,11,0.4)] hover:scale-105 active:scale-95"
-                                        >
-                                            Watch Session
-                                        </button>
+                                        <a href="https://www.linkedin.com/events/7424113166231470080/" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg group/img">
+                                            <img
+                                                src="/a.jpeg"
+                                                alt="Session Preview"
+                                                className="w-48 rounded-lg border border-white/20 shadow-lg group-hover/img:scale-105 transition-all group-hover/img:border-emerald-500/50"
+                                            />
+                                        </a>
+                                        <div className="flex flex-col sm:flex-row gap-2">
+                                            <button
+                                                onClick={() => window.open('https://www.linkedin.com/events/7424113166231470080/', '_blank')}
+                                                className="px-8 py-3 rounded-xl bg-emerald-500 text-black text-sm font-bold hover:bg-emerald-400 transition-all shadow-[0_0_20px_-5px_rgba(16,185,129,0.4)] hover:scale-105 active:scale-95 whitespace-nowrap"
+                                            >
+                                                Watch Session
+                                            </button>
+                                            <button
+                                                onClick={() => window.open('https://docs.google.com/document/d/1ZU3bqVgoSxhsM-TTEQrEn9u5lGLTWElrGFSnDNOFv8U/export?format=pdf', '_blank')}
+                                                className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-xs font-bold hover:bg-white/10 transition-all flex items-center gap-2"
+                                            >
+                                                PDF
+                                            </button>
+                                        </div>
                                     </div>
                                 ) : index === 1 ? (
                                     <button
                                         onClick={() => window.open('https://us06web.zoom.us/meeting/register/KGX9_cAvRi67lBeNmcRhsw', '_blank')}
-                                        className="px-8 py-3 rounded-xl bg-amber-500 text-black text-sm font-bold hover:bg-amber-400 transition-all shadow-[0_0_20px_-5px_rgba(245,158,11,0.4)] hover:scale-105 active:scale-95"
+                                        className="px-8 py-3 rounded-xl bg-emerald-500 text-black text-sm font-bold hover:bg-emerald-400 transition-all shadow-[0_0_20px_-5px_rgba(16,185,129,0.4)] hover:scale-105 active:scale-95"
                                     >
                                         Join Sync
                                     </button>
