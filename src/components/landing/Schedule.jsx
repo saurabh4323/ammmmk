@@ -99,7 +99,7 @@ export default function Schedule() {
                                 {index === 0 ? (
                                     <div className="flex flex-col items-center gap-4">
                                         <img
-                                            src="https://img.sanishtech.com/u/2c0570d45dbae79603238aeb7c83a955.jpg"
+                                            src="/a.jpeg"
                                             alt="Session Preview"
                                             className="w-48 rounded-lg border border-white/20 shadow-lg hover:border-amber-500/50 transition-colors"
                                         />
