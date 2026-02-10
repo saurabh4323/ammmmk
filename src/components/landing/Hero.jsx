@@ -26,7 +26,7 @@ export default function Hero({ onRegister }) {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
                         </span>
-                        Next Session: The Family/Career Strategy
+                        Next Session: The Momentum Builder
                     </div>
 
                     <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
