@@ -114,7 +114,7 @@ export default function Schedule() {
                                                 Watch Session
                                             </button>
                                             <button
-                                                onClick={() => window.open('https://drive.google.com/file/d/1Nc2y7nmtsUA5COEOtF0lXv0Lr_0n6nlz/view?usp=sharing', '_blank')}
+                                                onClick={() => window.open('https://drive.google.com/file/d/1wM-guQoA0U9qd7FJ8i55KrCMJP41D4Y2/view?usp=drive_link', '_blank')}
                                                 className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-xs font-bold hover:bg-white/10 transition-all flex items-center gap-2"
                                             >
                                                 PDF
@@ -138,7 +138,7 @@ export default function Schedule() {
                                                 Watch Session
                                             </button>
                                             <button
-                                                onClick={() => window.open('https://drive.google.com/file/d/1wM-guQoA0U9qd7FJ8i55KrCMJP41D4Y2/view?usp=drive_link', '_blank')}
+                                                onClick={() => window.open('https://drive.google.com/file/d/1Nc2y7nmtsUA5COEOtF0lXv0Lr_0n6nlz/view?usp=sharing', '_blank')}
                                                 className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-xs font-bold hover:bg-white/10 transition-all flex items-center gap-2"
                                             >
                                                 PDF
