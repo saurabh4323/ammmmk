@@ -32,19 +32,19 @@ export default function Footer() {
                             Empowering the next generation of global leaders through strategic insights and high-level networking.
                         </p>
                         <div className="flex items-center gap-3">
-                            <a href="https://www.facebook.com/share/v/1C4Wv4DE7u/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-[#1877F2]/10 hover:text-[#1877F2] hover:border-[#1877F2]/20">
+                            <a href="https://www.facebook.com/share/v/1DRKwJFhoN/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-[#1877F2]/10 hover:text-[#1877F2] hover:border-[#1877F2]/20">
                                 <Facebook className="w-4 h-4" />
                             </a>
-                            <a href="https://www.linkedin.com/events/7424113166231470080/theater/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-[#0A66C2]/10 hover:text-[#0A66C2] hover:border-[#0A66C2]/20">
+                            <a href="https://www.linkedin.com/posts/mudit--saxenaglobalcxoleadershipcoach_cxo-accelerator-summit-sync-your-15-years-ugcPost-7425546160674729984-wHS2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAExqPQBLR4D9kPCabGNISBep4dfECM5HkI" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-[#0A66C2]/10 hover:text-[#0A66C2] hover:border-[#0A66C2]/20">
                                 <Linkedin className="w-4 h-4" />
                             </a>
-                            <a href="https://www.youtube.com/watch?v=xh4a16UTpAg" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-[#FF0000]/10 hover:text-[#FF0000] hover:border-[#FF0000]/20">
+                            <a href="https://www.youtube.com/live/yXiRqtPVtZQ?si=sVS30PbeJ405R40f" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-[#FF0000]/10 hover:text-[#FF0000] hover:border-[#FF0000]/20">
                                 <Youtube className="w-4 h-4" />
                             </a>
                             <a href="https://www.instagram.com/muditsaxenaglobalcxocoach/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-[#E4405F]/10 hover:text-[#E4405F] hover:border-[#E4405F]/20">
                                 <Instagram className="w-4 h-4" />
                             </a>
-                            <a href="https://x.com/i/broadcasts/1lPJqvODqqdxb" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-white/10 hover:text-white hover:border-white/20">
+                            <a href="https://x.com/i/broadcasts/1LyxBXgdNAyGN" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-white/5 text-slate-400 transition-all border border-white/5 group hover:bg-white/10 hover:text-white hover:border-white/20">
                                 <X className="w-4 h-4" />
                             </a>
                         </div>
