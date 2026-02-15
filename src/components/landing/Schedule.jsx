@@ -125,7 +125,7 @@ export default function Schedule() {
                                     <div className="flex flex-col items-center gap-4">
                                         <a href="https://drive.google.com/file/d/1wM-guQoA0U9qd7FJ8i55KrCMJP41D4Y2/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg group/img">
                                             <img
-                                                src="/a.jpeg"
+                                                src="/amitnathb.jpeg"
                                                 alt="Session Preview"
                                                 className="w-48 rounded-lg border border-white/20 shadow-lg group-hover/img:scale-105 transition-all group-hover/img:border-emerald-500/50"
                                             />
@@ -170,6 +170,30 @@ export default function Schedule() {
                                         </div>
                                     </div>
                                 ) : index === 3 ? (
+                                    <div className="flex flex-col items-center gap-4">
+                                        <a href="https://www.youtube.com/watch?v=c6WTl019KMs" target="_blank" rel="noopener noreferrer" className="block overflow-hidden rounded-lg group/img">
+                                            <img
+                                                src="/amitnath.jpeg"
+                                                alt="Session 4 Preview"
+                                                className="w-48 rounded-lg border border-white/20 shadow-lg group-hover/img:scale-105 transition-all group-hover/img:border-emerald-500/50"
+                                            />
+                                        </a>
+                                        <div className="flex flex-col sm:flex-row gap-2">
+                                            <button
+                                                onClick={() => window.open('https://www.youtube.com/watch?v=c6WTl019KMs', '_blank')}
+                                                className="px-8 py-3 rounded-xl bg-emerald-500 text-black text-sm font-bold hover:bg-emerald-400 transition-all shadow-[0_0_20px_-5px_rgba(16,185,129,0.4)] hover:scale-105 active:scale-95 whitespace-nowrap"
+                                            >
+                                                Watch Session
+                                            </button>
+                                            <button
+                                                onClick={() => window.open('https://drive.google.com/file/d/1FLoCpu5upRyGJ7cPebzdMGxuZ1Kzr-3I/view?usp=sharing', '_blank')}
+                                                className="px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-xs font-bold hover:bg-white/10 transition-all flex items-center gap-2"
+                                            >
+                                                PDF
+                                            </button>
+                                        </div>
+                                    </div>
+                                ) : index === 4 ? (
                                     <button
                                         onClick={() => window.open('https://us06web.zoom.us/meeting/register/KGX9_cAvRi67lBeNmcRhsw', '_blank')}
                                         className="px-8 py-3 rounded-xl bg-emerald-500 text-black text-sm font-bold hover:bg-emerald-400 transition-all shadow-[0_0_20px_-5px_rgba(16,185,129,0.4)] hover:scale-105 active:scale-95"
